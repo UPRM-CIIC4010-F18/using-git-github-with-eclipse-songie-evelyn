@@ -75,13 +75,24 @@ public class Employee {
 	 * 		a) For a level 3 seniority the employee needs at least 10 years of service.
 	 * 		b) For a level 2 seniority the employee needs at least 5 years of service.
 	 * 		c) For a level 1 seniority the employee needs at least 1 years of service.
-	 * 		d) For a level 0 the employee needs less than 1 year of service.
+	 * 		d) For a level 0 the employee DO NOT PUSH THE LOCAL BRANCH WE CREATED!!!needs less than 1 year of service.
 	 * @return 
 	 */
 	public int seniorityLevel() {
 		
 		//Add Code Here [You have to use If/Else to get graded]
-		
+		if (yearService >= 10){
+			 return 3;
+		}
+		else if(yearService >= 5){
+			return 2;
+		}
+		else if(yearService >= 1){
+			return 1;
+		}
+		else if (yearService < 1){
+			 return 0;
+		}
 		return 0;// Temporal Return
 		
 	}
